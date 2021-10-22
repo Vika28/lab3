@@ -2,40 +2,38 @@ public class Movie {
     private String name;
     private int year;
     private double rate;
-
+    //е
     Movie(String name, int year) {
         this.name = name;
         this.year = year;
-        System.out.printf("Movie %s was released in %d\n\n", name, year);
     }
-
+    //є
     Movie(String name, int year, double rate) {
-        this(name, year);
+
+        this(name, year);//з
         this.rate = rate;
-        System.out.printf("Movie %s was released in %d with rate: %s\n\n", name, year, rate);
     }
-
+    //ж
     Movie() {
-        this.name = "No name";
-        System.out.printf("Movie %s\n\n", name);
+        this.rate = 0.1;
     }
-
-    void setName(String movieName) { // Задати ім’я фільму
+    //і
+    void setName(String movieName) {
         name = movieName;
     }
-    void setYear (int movieYear) { // Задати рік виходу
+    void setYear (int movieYear) {
         year = movieYear;
     }
-    void setRate(double movieRate) { // Задати рейтинг фільму
+    void setRate(double movieRate) {
         rate = movieRate;
     }
-    String getName() { // Отримати ім’я фільму
+    String getName() {
         return name;
     }
-    int getYear() { // Отримати рік виходу фільму
+    int getYear() {
         return year;
     }
-    double getRate() { // Отримати рейтинг фільму
+    double getRate() {
         return rate;
     }
 }
